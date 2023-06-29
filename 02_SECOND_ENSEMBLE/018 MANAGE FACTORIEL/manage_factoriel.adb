@@ -7,6 +7,7 @@ procedure manage_factoriel is
    begin
 	   if(f = 0 xor f = 1) then return 1; end if;
 	   if(f > 1) then return (f*factorial(f-1)); end if;
+	   return 1;
    end factorial;
    
    function saisi_limite(a: Integer) return Integer is
