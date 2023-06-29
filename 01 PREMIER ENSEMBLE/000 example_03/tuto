@@ -1,0 +1,35 @@
+1.3 Running a Program with Multiple Units
+
+Consider a slightly more complicated example that has three files: a main program, and the spec and body of a package:
+
+     
+
+package Greetings is procedure Hello; procedure Goodbye; end Greetings; with Ada.Text_IO; use Ada.Text_IO; package body Greetings is procedure Hello is begin Put_Line ("Hello WORLD!"); end Hello; procedure Goodbye is begin Put_Line ("Goodbye WORLD!"); end Goodbye; end Greetings;
+
+with Greetings; procedure Gmain is begin Greetings.Hello; Greetings.Goodbye; end Gmain;
+
+Following the one-unit-per-file rule, place this program in the following three separate files:
+
+greetings.ads
+    spec of package Greetings
+greetings.adb
+    body of package Greetings
+gmain.adb
+    body of main program 
+
+To build an executable version of this program, we could use four separate steps to compile, bind, and link the program, as follows:
+
+     $ gcc -c gmain.adb
+     $ gcc -c greetings.adb
+     $ gnatbind gmain
+     $ gnatlink gmain
+
+Note that there is no required order of compilation when using GNAT. In particular it is perfectly fine to compile the main program first. Also, it is not necessary to compile package specs in the case where there is an accompanying body; you only need to compile the body. If you want to submit these files to the compiler for semantic checking and not code generation, then use the -gnatc switch:
+
+     $ gcc -c greetings.ads -gnatc
+
+Although the compilation can be done in separate steps as in the above example, in practice it is almost always more convenient to use the gnatmake tool. All you need to know in this case is the name of the main program's source file. The effect of the above four commands can be achieved with a single one:
+
+     $ gnatmake gmain.adb
+
+In the next section we discuss the advantages of using gnatmake in more detail. 
