@@ -19,13 +19,13 @@ procedure manage_factoriel is
 	    end loop ; 
    end saisi_limite;
    
-   procedure display_results(a: integer; b : integer ) is
+   procedure display_result(a: integer; b : integer ) is
    begin
       Put_Line ("Factorial of "
                 & Integer'Image (a)
                 & " is "
                 & Integer'Image (b));
-   end display_results;
+   end display_result;
    
    C : Integer;
    limit : Integer;
@@ -34,6 +34,6 @@ begin
     limit := saisi_limite(1);
     for A in 1 .. limit loop
 	   C := factorial(A);
-	   display_results(A, C);
+	   display_result(A, C);
 	end loop;
 end manage_factoriel;
