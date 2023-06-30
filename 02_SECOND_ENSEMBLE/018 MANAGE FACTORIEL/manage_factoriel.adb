@@ -22,10 +22,17 @@ procedure manage_factoriel is
    
    procedure display_result(a: integer; b : integer ) is
    begin
-      Put_Line ("Factorial of "
-                & Integer'Image (a)
-                & " is "
-                & Integer'Image (b));
+      Put_Line ( if (a <= 9) then 
+					"Factorial of "
+					& Integer'Image (a)
+					& "  is  "
+					& Integer'Image (b)
+				else
+					"Factorial of "
+					& Integer'Image (a)
+					& " is  "
+					& Integer'Image (b)
+				);
    end display_result;
    
    C : Integer;
