@@ -9,13 +9,13 @@ extern "C"
 
 void method1 (Methods *t)
 {
-  t->method1 ();
+  t->method();
 }
 
 int main (int argc, char ** argv)
 {
-  Methods obj;
+  Methods mtds;
   adainit ();
-  obj.method2 (3030);
+  mtds.method (3030);
   adafinal ();
 }

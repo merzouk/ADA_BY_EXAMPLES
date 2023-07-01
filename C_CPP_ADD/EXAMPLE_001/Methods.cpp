@@ -2,20 +2,20 @@
 
 extern "C" { void ada_method2 (Methods *t, int v);}
 
-void Methods::method1(void)
+void Methods::method(void)
 {
   a_value = 2020;
-  printf ("in A::method1, a_value = %d \n", a_value);
+  std::cout <<"in class Methods the method without params, init variable \"a_value\" to " << a_value << std::endl;
 }
 
-void Methods::method2(int v)
+void Methods::method(int v)
 {
    ada_method2 (this, v);
-   printf ("in A::method2, a_value = %d \n", a_value);
+   std::cout << "in class Methods the method with params, init variable \"a_value\" to " << a_value  << std::endl ;
 }
 
 Methods::Methods(void)
 {
   a_value = 1010;
-  printf ("in A::A, a_value = %d \n", a_value);
+  std::cout << "Constructor, init variable \"a_value\" to " << a_value  << std::endl;
 }

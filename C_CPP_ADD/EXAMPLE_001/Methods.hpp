@@ -1,10 +1,11 @@
 #include "Datas.hpp"
+#include <iostream>  
 
 class Methods : public Datas 
 {
 	 public:
-	  void method1 (void);
-	  void method2 (int v);
+	  void method (void);
+	  void method (int v);
 	  Methods();
 	  int   a_value;
 };
