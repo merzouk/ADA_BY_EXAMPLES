@@ -6,6 +6,7 @@ with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
    N : integer := 0;
    begin
 		loop
+		    N := 0;
 			Put_Line("Saisir un entier superieur ou egal a " & Integer'Image (a) & " : ");
 			Get(N) ; Skip_line ; 
 			if (N >= a) then return N; end if ; 
