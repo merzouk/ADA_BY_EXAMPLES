@@ -1,4 +1,7 @@
 *.ali
 *.exe
 *.o
+*.txt
+*.doc
 ADA_EXAMPLE/
+.vscode/
