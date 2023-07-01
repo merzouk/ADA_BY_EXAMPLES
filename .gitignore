@@ -3,5 +3,9 @@
 *.o
 *.txt
 *.doc
+
+
 ADA_EXAMPLE/
+
+
 .vscode/
