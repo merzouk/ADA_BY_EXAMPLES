@@ -11,7 +11,7 @@ $ g++ -c *.c
 
 $ gnatbind -n simple_cpp_interface
 
-$ gnatlink simple_cpp_interface -o main --LINK=g++ -lstdc++ *.o
+$ gnatlink simple_cpp_interface -o main --LINK=g++ -lstdc++ A.o main.o
 
 ```
 
