@@ -1,5 +1,4 @@
 #include "Datas.hpp"
-#include <iostream>  
 
 class Methods : public Datas 
 {
