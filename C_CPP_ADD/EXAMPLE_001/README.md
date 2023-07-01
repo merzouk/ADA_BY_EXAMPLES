@@ -11,7 +11,7 @@ $ g++ -g -Wall -ansi -pedantic -std=c++0x -c *.cpp
 
 $ gnatbind -n simple_cpp_interface
 
-$ gnatlink simple_cpp_interface -o main --LINK=g++ -lstdc++ A.o main.o
+$ gnatlink simple_cpp_interface -o main --LINK=g++ -lstdc++ Methods.o main.o
 
 ```
 
