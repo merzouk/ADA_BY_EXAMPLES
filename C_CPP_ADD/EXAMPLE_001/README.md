@@ -7,7 +7,7 @@
 ```
 $ gnatmake -c simple_cpp_interface
 
-$ g++ -c *.c
+$ g++ -c *.cpp
 
 $ gnatbind -n simple_cpp_interface
 
