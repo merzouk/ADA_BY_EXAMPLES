@@ -1,20 +1,20 @@
-#include "A.hpp"
+#include "Methods.hpp"
 
 extern "C" 
 {
   void adainit (void);
   void adafinal (void);
-  void method1 (A *t);
+  void method1 (Methods *t);
 }
 
-void method1 (A *t)
+void method1 (Methods *t)
 {
   t->method1 ();
 }
 
 int main (int argc, char ** argv)
 {
-  A obj;
+  Methods obj;
   adainit ();
   obj.method2 (3030);
   adafinal ();

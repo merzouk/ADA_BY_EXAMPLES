@@ -1,10 +1,10 @@
-#include "Origin.hpp"
+#include "Datas.hpp"
 
-class A : public Origin 
+class Methods : public Datas 
 {
 	 public:
 	  void method1 (void);
 	  void method2 (int v);
-	  A();
+	  Methods();
 	  int   a_value;
 };

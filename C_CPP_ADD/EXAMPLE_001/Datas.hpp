@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-class Origin 
+class Datas 
 {
 	 public:
 		  int o_value;
