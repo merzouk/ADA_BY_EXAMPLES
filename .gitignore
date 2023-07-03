@@ -4,7 +4,7 @@
 *.txt
 *.doc
 
-.idea
+.idea/
 
 ADA_EXAMPLE/
 
