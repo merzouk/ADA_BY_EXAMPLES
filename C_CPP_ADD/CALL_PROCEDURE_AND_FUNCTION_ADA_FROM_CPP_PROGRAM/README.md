@@ -18,34 +18,29 @@ $ gnatlink ada_package -o main --LINK=g++ -lstdc++ main.o
 The main.exe file obtained allows you to run the application
 
 ```
- main.exe
+
+main.exe
 Begin program in C++
+in C++ : call ADA function to enter a positive integer
 ADA : Saisir un entier non null inferieur ou egal a  12 :
 0
-ADA : Saisir un entier non null inferieur ou egal a  12 : 
--1
-ADA : Saisir un entier non null inferieur ou egal a  12 : 
-13
-ADA : Saisir un entier non null inferieur ou egal a  12 : 
-12
-Begin redirect to ADA programm 
-ADA : RECEIVED NUMBER FROM CPP :  12
-ADA : factorial of  12 is  479001600
-In C++ : 2 * 12 = 24
-in C++ : The factorial(0) = 1
-in C++ : The factorial(1) = 1
-in C++ : The factorial(2) = 2
-in C++ : The factorial(3) = 6
-in C++ : The factorial(4) = 24
-in C++ : The factorial(5) = 120
-in C++ : The factorial(6) = 720
-in C++ : The factorial(7) = 5040
-in C++ : The factorial(8) = 40320
-in C++ : The factorial(9) = 362880
-in C++ : The factorial(10) = 3628800
-in C++ : The factorial(11) = 39916800
-in C++ : The factorial(12) = 479001600
+ADA : Saisir un entier non null inferieur ou egal a  12 :
+14
+ADA : Saisir un entier non null inferieur ou egal a  12 :
+6
+Begin redirect to ADA programm
+ADA : RECEIVED NUMBER FROM CPP :  6
+ADA : factorial of  6 is  720
+In C++ call ADA function : 2 * 6 = 12
+in C++ : call ADA function The factorial(0) = 1
+in C++ : call ADA function The factorial(1) = 1
+in C++ : call ADA function The factorial(2) = 2
+in C++ : call ADA function The factorial(3) = 6
+in C++ : call ADA function The factorial(4) = 24
+in C++ : call ADA function The factorial(5) = 120
+in C++ : call ADA function The factorial(6) = 720
 out from ADA programm
 End programm in C++
+
 
 ```
