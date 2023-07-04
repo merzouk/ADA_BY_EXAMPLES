@@ -43,7 +43,7 @@ void print_value_and_factorial(int limit)
 	}
 	for(int fact = 0 ; fact <= limit ; fact++)
 	{
-		std::cout << "in C++ Le factoriel de " << fact << " vaut " << factorial (fact) << std::endl;
+		std::cout << "in C++ : The factorial(" << fact << ") = " << factorial (fact) << std::endl;
 	}
 }
 
@@ -56,7 +56,7 @@ int main (int argc, char ** argv)
 		std::cout << "Begin redirect to ADA programm " << std::endl;
         print_number(in);
 		print_factorial(in);
-		std::cout << "In C++ Le double de " << in << " vaut " << doubler (in) << std::endl;
+		std::cout << "In C++ : 2 * " << in << " = " << doubler (in) << std::endl;
 		print_value_and_factorial(in);
 		std::cout << "out from ADA programm " << std::endl;
         adafinal(); // Required for Ada 
