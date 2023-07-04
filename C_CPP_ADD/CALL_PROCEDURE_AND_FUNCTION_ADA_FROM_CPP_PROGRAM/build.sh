@@ -13,7 +13,7 @@ rm main
 
 echo "run gnatmake" 
 
-gnatmake -c simple_cpp_interface
+gnatmake -c ada_package
 
 echo "run g++ command"
 
@@ -22,12 +22,12 @@ g++ -g -Wall -ansi -pedantic -std=c++0x -c *.cpp
 
 echo "run gnatbind command"
 
-gnatbind -n simple_cpp_interface
+gnatbind -n ada_package
 
 
 echo "build exec "
 
-gnatlink simple_cpp_interface -o main --LINK=g++ -lstdc++ Methods.o main.o
+gnatlink ada_package -o main --LINK=g++ -lstdc++ main.o
 
 
 exit 0
