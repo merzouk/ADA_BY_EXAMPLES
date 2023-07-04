@@ -12,13 +12,13 @@
 
 extern "C" 
 {
-        void print_number (int data);
+    void print_number (int data);
 	void print_factorial (int fac);
 	int saisi_limite (int limit);
 	int factorial (int fact);
 	int doubler (int d);
-        void adainit ();
-        void adafinal ();
+    void adainit ();
+    void adafinal ();
 }
 
 int init_value(int a)
@@ -31,7 +31,6 @@ int init_value(int a)
 		std::cout << "Enter new integer value between 1 and 12 : " << std::endl;
 		std::cin >> in;
 	}
-	
 	return in;
 }
 
@@ -50,17 +49,17 @@ void print_value_and_factorial(int limit)
 void test () 
 {      
         
-        std::cout << "Begin program in C++" << std::endl;
-        adainit(); // Required for Ada
+    std::cout << "Begin program in C++" << std::endl;
+    adainit(); // Required for Ada
 	int in = init_value(12);
 	std::cout << "Begin redirect to ADA programm " << std::endl;
-        print_number(in);
+    print_number(in);
 	print_factorial(in);
 	std::cout << "In C++ : 2 * " << in << " = " << doubler (in) << std::endl;
 	print_value_and_factorial(in);
 	std::cout << "out from ADA programm " << std::endl;
-        adafinal(); // Required for Ada 
-        std::cout << "End programm in C++" << std::endl;
+    adafinal(); // Required for Ada 
+    std::cout << "End programm in C++" << std::endl;
 }
 
 int main (int argc, char ** argv) 
