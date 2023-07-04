@@ -19,3 +19,8 @@ Methods::Methods(void)
   a_value = 1010;
   std::cout << "Constructor, init variable \"a_value\" to " << a_value  << std::endl;
 }
+
+Methods::~Methods(void)
+{
+  std::cout << "Destroy Methods Object " << std::endl;
+}

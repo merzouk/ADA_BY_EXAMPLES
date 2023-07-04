@@ -6,5 +6,6 @@ class Methods : public Datas
 			void method (void);
 			void method (int v);
 			Methods();
+			~Methods();
 			int   a_value;
 };
