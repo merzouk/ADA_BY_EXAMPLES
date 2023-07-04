@@ -14,7 +14,6 @@ package body ada_package is
 	function saisi_limite(limit : in Integer) return Integer is
 		N : integer := 0;
 		begin
-		    	Ada.Text_Io.Put_Line("ADA : Saisir un entier non null inferieur ou egal a " & Integer'Image (limit));
 				loop
 					N := 0;
 					Ada.Text_Io.Put_Line("ADA : Saisir un entier non null inferieur ou egal a " & Integer'Image (limit) & " : ");

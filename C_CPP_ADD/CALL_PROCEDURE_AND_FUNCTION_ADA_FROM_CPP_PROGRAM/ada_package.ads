@@ -6,6 +6,7 @@ package ada_package is
 	function doubler (d : in Integer) return Integer;
 	
     pragma Export (C, print_number, "print_number");
+	pragma Export (C, saisi_limite, "saisi_limite");
 	pragma Export (C, print_factorial, "print_factorial");
 	pragma Export (C, factorial, "factorial");
 	pragma Export (C, doubler, "doubler");

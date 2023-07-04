@@ -21,16 +21,9 @@ extern "C"
     void adafinal ();
 }
 
-int init_value(int a)
+int init_value(int limite)
 {
-	//int in =  saisi_limite (a); 
-	int in = 0;
-	while(in <= 0 || in >= 13)
-	{
-		in = 0;
-		std::cout << "Enter new integer value between 1 and 12 : " << std::endl;
-		std::cin >> in;
-	}
+	int in =  saisi_limite (limite); 
 	return in;
 }
 
