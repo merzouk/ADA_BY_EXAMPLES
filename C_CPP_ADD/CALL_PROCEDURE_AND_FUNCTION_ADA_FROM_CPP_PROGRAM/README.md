@@ -20,15 +20,16 @@ The main.exe file obtained allows you to run the application
 ```
 
 main.exe
+Constructor : init 
 Begin program in C++
 in C++ : call ADA function to enter a positive integer
 ADA : Saisir un entier non null inferieur ou egal a  12 :
 0
-ADA : Saisir un entier non null inferieur ou egal a  12 :
-14
-ADA : Saisir un entier non null inferieur ou egal a  12 :
+ADA : Saisir un entier non null inferieur ou egal a  12 : 
+-1
+ADA : Saisir un entier non null inferieur ou egal a  12 : 
 6
-Begin redirect to ADA programm
+Begin redirect to ADA programm 
 ADA : RECEIVED NUMBER FROM CPP :  6
 ADA : factorial of  6 is  720
 In C++ call ADA function : 2 * 6 = 12
@@ -41,6 +42,7 @@ in C++ : call ADA function The factorial(5) = 120
 in C++ : call ADA function The factorial(6) = 720
 out from ADA programm
 End programm in C++
+Constructor : destroy
 
 
 ```
