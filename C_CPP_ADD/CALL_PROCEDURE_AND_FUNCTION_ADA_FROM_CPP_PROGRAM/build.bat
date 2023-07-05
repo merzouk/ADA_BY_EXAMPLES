@@ -1,13 +1,14 @@
 echo "remove  all *.ali files"
 
-rm *.ali
+del *.ali
 
 echo "remove all *.o files"
-rm *.o
+
+del *.o
 
 echo "remove exec file"
 
-rm main
+del main
 
 echo "run gnatmake" 
 
