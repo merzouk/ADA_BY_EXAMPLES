@@ -27,7 +27,6 @@ gnatbind -n ada_package
 
 echo "build exec "
 
-gnatlink ada_package -o main --LINK=g++ -lstdc++ main.o
-
+gnatlink ada_package -o main --LINK=g++ -lstdc++ main.o Calculs.o
 
 exit 0
