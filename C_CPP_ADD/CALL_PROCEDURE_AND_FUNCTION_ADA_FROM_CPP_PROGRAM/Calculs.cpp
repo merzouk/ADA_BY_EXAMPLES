@@ -23,8 +23,7 @@ void Calculs::print_value_and_factorial(int limit)
 }
 
 void Calculs::run () 
-{      
-        
+{
     std::cout << "Begin program in C++" << std::endl;
     adainit(); // Required for Ada
 	int in = init_value(12);
