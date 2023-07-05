@@ -5,6 +5,8 @@
 
 class Calculs
 {
+    private:
+          
     public:
           Calculs()
           {

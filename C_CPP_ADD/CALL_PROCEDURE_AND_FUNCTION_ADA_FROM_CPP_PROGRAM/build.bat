@@ -8,7 +8,7 @@ del *.o
 
 echo "remove exec file"
 
-del main
+del main.exe
 
 echo "run gnatmake" 
 

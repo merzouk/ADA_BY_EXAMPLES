@@ -1,6 +1,5 @@
 #include "Calculs.hpp"
 
-
 int Calculs::init_value(int limite)
 {
 	std::cout << "in C++ : call ADA function to enter a positive integer " << std::endl;
@@ -16,7 +15,10 @@ void Calculs::print_value_and_factorial(int limit)
 	}
 	for(int fact = 0 ; fact <= limit ; fact++)
 	{
-		std::cout << "in C++ : call ADA function The factorial(" << fact << ") = " << factorial (fact) << std::endl;
+		if (fact <= 9)
+			std::cout << "in C++ : call ADA function The factorial(" << fact << ")  = " << factorial (fact) << std::endl;
+		else 
+			std::cout << "in C++ : call ADA function The factorial(" << fact << ") = " << factorial (fact) << std::endl;
 	}
 }
 

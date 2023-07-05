@@ -4,6 +4,10 @@
 *.txt
 *.doc
 
+*.cbp
+*.layout
+
+
 .idea/
 
 
