@@ -16,7 +16,9 @@ package body ada_package is
 	    N : Integer := 0;
 		begin
 		    Skip_Line(1);
-		    Ada.Text_Io.Put_Line("ADA : Saisir un entier non null inferieur ou egal a " & Integer'Image (limit) & " : ");
+		    Ada.Text_Io.Put_Line("ADA : Saisir un entier non null inferieur ou egal a " 
+			                     & Integer'Image (limit) 
+								 & " : ");
 			Get(N) ; 
 			return N;
 		exception
@@ -49,7 +51,10 @@ package body ada_package is
 	
 	procedure print_factorial (fact : in Integer) is
         begin
-            Ada.Text_Io.Put_Line ("ADA : factorial of " & Integer'Image(fact) & " is " & Integer'Image(factorial(fact)));
+            Ada.Text_Io.Put_Line ("ADA : factorial of " 
+			                      & Integer'Image(fact) 
+								  & " is " 
+								  & Integer'Image(factorial(fact)));
         end print_factorial;
 	
 	function doubler (d : in Integer) return Integer is
