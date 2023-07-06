@@ -25,7 +25,7 @@ The main.exe file obtained allows you to run the application
 
 To build the executable, you can use build.sh for a Linux environment and build.bat for Windows
 
-## trace of program execution
+## Trace of program execution
 
 ```
 
