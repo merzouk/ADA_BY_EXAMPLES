@@ -25,14 +25,14 @@ void Calculs::print_value_and_factorial(int limit)
 void Calculs::run () 
 {
     std::cout << "Begin program in C++" << std::endl;
+	std::cout << "Begin redirect to ADA program " << std::endl;
     adainit(); // Required for Ada
 	int in = init_value(12);
-	std::cout << "Begin redirect to ADA programm " << std::endl;
     print_number(in);
 	print_factorial(in);
 	std::cout << "In C++ call ADA function : 2 * " << in << " = " << doubler (in) << std::endl;
 	print_value_and_factorial(in);
-	std::cout << "out from ADA programm " << std::endl;
+	std::cout << "out from ADA program " << std::endl;
     adafinal(); // Required for Ada 
-    std::cout << "End programm in C++" << std::endl;
+    std::cout << "End program in C++" << std::endl;
 }
