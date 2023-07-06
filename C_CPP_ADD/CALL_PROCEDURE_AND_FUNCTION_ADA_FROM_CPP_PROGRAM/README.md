@@ -1,4 +1,4 @@
-# call ADA Procedures and functions from CPP programm
+# Call ADA Procedures and functions from CPP program
 
 ```
 Example of a CPP program that calls procedures and functions of an ADA program.
