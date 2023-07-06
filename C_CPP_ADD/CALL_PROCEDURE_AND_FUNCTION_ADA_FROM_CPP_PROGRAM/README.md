@@ -11,7 +11,7 @@ $ g++ -g -Wall -ansi -pedantic -std=c++0x -c *.cpp
 
 $ gnatbind -n ada_package
 
-$ gnatlink ada_package -o main --LINK=g++ -lstdc++ main.o
+$ gnatlink ada_package -o main --LINK=g++ -lstdc++ Calculs.o main.o
 
 ```
 
