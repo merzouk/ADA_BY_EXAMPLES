@@ -21,6 +21,10 @@ $ gnatlink ada_package -o main --LINK=g++ -lstdc++ Calculs.o main.o
 
 The main.exe file obtained allows you to run the application
 
+## Note
+
+To build the executable, you can use build.sh for a Linux environment and build.bat for Windows
+
 ```
 
 main.exe
