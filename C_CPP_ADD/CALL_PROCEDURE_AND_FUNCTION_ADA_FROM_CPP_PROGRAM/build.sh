@@ -11,6 +11,10 @@ echo "remove exec file"
 
 rm main
 
+echo "end file cleaning"
+
+echo "Start generating the executable file"
+
 echo "run gnatmake" 
 
 gnatmake -c ada_package
