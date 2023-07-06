@@ -1,16 +1,16 @@
 #!/bin/sh
 
-echo "remove  all *.ali files"
+echo "Begin file cleaning"
 
+echo "remove  all *.ali files"
 rm *.ali
 
 echo "remove all *.o files"
 rm *.o
 
 echo "remove exec file"
-
 rm main
 
-echo "end file cleaning"
+echo "End file cleaning"
 
-return 0
+exit 0
