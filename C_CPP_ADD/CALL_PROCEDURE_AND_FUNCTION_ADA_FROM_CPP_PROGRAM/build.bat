@@ -1,17 +1,3 @@
-echo "remove  all *.ali files"
-
-del *.ali
-
-echo "remove all *.o files"
-
-del *.o
-
-echo "remove exec file"
-
-del main.exe
-
-echo "end file cleaning"
-
 echo "Start generating the executable file"
 
 echo "run gnatmake" 
@@ -32,5 +18,3 @@ echo "build exec "
 
 gnatlink ada_package -o main --LINK=g++ -lstdc++ main.o Calculs.o
 
-
-pause
