@@ -1,7 +1,7 @@
 # Call ADA Procedures and functions from CPP program
 
 ```
-Example of a CPP program that calls procedures and functions of an ADA program.
+Example CPP program that calls procedures and functions ADA.
 ```
 
 ## Compil and Run the application 
