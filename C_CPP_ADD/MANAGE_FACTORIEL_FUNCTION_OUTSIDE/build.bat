@@ -9,3 +9,5 @@ gcc -c -I.\ -I- format_message.adb
 gnatbind -x main.ali
 gnatlink main.ali
 
+echo "End generating the executable file"
+
