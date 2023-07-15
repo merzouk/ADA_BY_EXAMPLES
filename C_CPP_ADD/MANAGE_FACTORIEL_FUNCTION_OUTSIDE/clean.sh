@@ -12,7 +12,7 @@ rm *.o
 
 echo "remove exec file"
 
-rm *.exe
+rm main
 
 echo "end file cleaning"
 
