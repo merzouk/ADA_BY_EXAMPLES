@@ -2,14 +2,21 @@
 
 echo "Begin file cleaning"
 
-echo "remove  all *.ali files"
-rm *.ali
+files=$(ls *.ali 2> /dev/null | wc -l)
 
-echo "remove all *.o files"
-rm *.o
+if [ "$files" != "0" ]; then
+    echo "remove  all *.ali files"
+	rm *.ali
+fi
 
-echo "remove exec file"
-rm main
+files=$(ls *.o 2> /dev/null | wc -l)
+
+if [ "$files" != "0" ]; then 
+	echo "remove all *.o files"
+	rm *.o
+	echo "remove exec file"
+	rm main
+fi
 
 echo "End file cleaning"
 
