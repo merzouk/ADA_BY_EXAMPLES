@@ -1,6 +1,6 @@
 echo "Start generating the executable file"
 
-echo "run gnatmake" 
+echo "< run gnatmake >" 
 
 gnatmake -c ada_package
 
